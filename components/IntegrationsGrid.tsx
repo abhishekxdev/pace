@@ -1,9 +1,11 @@
 
 import React from 'react';
 
-const IntegrationLogo: React.FC<{ name: string; url: string }> = ({ name, url }) => (
-  <div className="flex items-center justify-center h-24 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 transition-colors px-6">
-    <img src={url} alt={name} className="max-h-8 max-w-full grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all" />
+const IntegrationLogo: React.FC<{ name: string; url: string }> = ({ name }) => (
+  <div className="flex items-center justify-center h-24 bg-gray-50 rounded-xl border border-gray-100 hover:border-gray-200 hover:bg-white transition-all px-6">
+    <span className="text-sm md:text-base font-medium text-gray-600 hover:text-gray-900 transition-colors text-center">
+      {name}
+    </span>
   </div>
 );
 
